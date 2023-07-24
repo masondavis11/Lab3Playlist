@@ -31,7 +31,22 @@ using namespace std;
 	}
 
 	void DLL::listDuration(int *tm, int *ts) {
+		int totalSeconds = 0;
+		int length = getLength();
+		for (int i=0;i<length;i++) {
+			
+		}
+
+		int getLength(){
+			int count = 0;
+			DNode* current = first
+			while(current != nullptr){
+				count++;
+				current = current->next;
+			return count
+				}
 			}
+	}
 	void DLL::moveDown(string s) {
 			}
 	void DLL::makeRandom() {
@@ -40,8 +55,9 @@ using namespace std;
 		for (int i=0;i<length;i++){
 			int index = rand() % length;
 			DNode switchNode = findNode(index);
+			DNode temp = current->data;
 			current->data = switchNode->data;
-			switchNode->data=current->data;
+			switchNode->data = temp;
 		}
 		int getLength(){
 			int count = 0;
