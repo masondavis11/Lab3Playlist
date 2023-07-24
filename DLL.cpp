@@ -35,27 +35,32 @@ using namespace std;
 	void DLL::moveDown(string s) {
 			}
 	void DLL::makeRandom() {
-		//int length = getLength()
-		//int random = rand() % length
-		//char temp = currentNode->data
-		//write a helper to find a node at &random
-		//current->data = node at &random->data
-		//node at &random->data = temp
-
-		//int getLength(){
-			//int count = 0;
-			//while(currentNode != null){
-				//count++;
-				//currentNode = currentNode->next;
-		//}
-
-		//Node findNode(int randomindex) {
-			//for (int i=0;i<=randomindex;i++) {
-				//Node current = current->next;
-				//}
-			//return current;
-		//}
+		int length = getlength();
+		DNode current = first;
+		for (int i=0;i<length;i++){
+			int index = rand() % length;
+			DNode switchNode = findNode(index);
+			current->data = switchNode->data;
+			switchNode->data=current->data;
 		}
+		int getLength(){
+			int count = 0;
+			DNode* current = first
+			while(current != nullptr){
+				count++;
+				current = current->next;
+			return count
+				}
+		}
+
+		DNode* findNode (int randindex) {
+			DNode* current = first;
+			for (int i=0;i<randindex;i++) {
+				current = current->next
+			}
+		}
+		
+	}
 	int DLL::remove(string s) {  
 // note that the int returned is the index - this is standard for a remove, but we won't be using it.
 		}
