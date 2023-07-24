@@ -35,7 +35,7 @@ using namespace std;
 	void DLL::moveDown(string s) {
 			}
 	void DLL::makeRandom() {
-		int length = getlength();
+		int length = getLength();
 		DNode current = first;
 		for (int i=0;i<length;i++){
 			int index = rand() % length;
